@@ -10,13 +10,13 @@ export class GameSubmarine {
         this.tablero.init(config);
         this.UIControl.start(this);
         this.UIControl.changeStatus("Tablero iniciado");
+        console.log(`El submarino esta en (${this.tablero.submarino.x}, ${this.tablero.submarino.y})`);
     }
 
 
     shot(x, y) {
     const acierto = this.tablero.dispara(x, y);
 
-    console.log(`El submarino esta en (${this.tablero.submarino.x}, ${this.tablero.submarino.y})`);
 
     if (acierto) {
       this.UIControl.changeStatus("Has acertado");
