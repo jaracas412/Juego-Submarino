@@ -17,6 +17,7 @@ export class GameSubmarine {
     shot(x, y) {
     const acierto = this.tablero.dispara(x, y);
 
+    console.log(`El submarino esta en (${this.tablero.submarino.x}, ${this.tablero.submarino.y})`);
 
     if (acierto) {
       this.UIControl.changeStatus("Has acertado");

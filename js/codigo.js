@@ -1,6 +1,7 @@
 import { UI } from "./UI.js";
 import { GameSubmarine } from "./GameSubmarine.js";
 
+
 UI.init({
     status: document.getElementById("status"),     
     table: document.getElementById("tabla2"),   
