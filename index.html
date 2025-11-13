@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo trabajo con DOM</title>
+    <link rel="stylesheet" href="./css/demo.css">
+</head>
+<body>
+    <h1>Juego del Submarino</h1>
+
+  <div id="status">status: Listo</div>
+    
+  <button id="btnStart">Comenzar</button>
+    X<input type="number" id="inputX" min="0" max="9">
+    Y<input type="number" id="inputY" min="0" max="9">
+  <button id="btnShot" disabled>Disparar</button>
+
+  <div id="tabla2">
+    <template id="casilla-template">
+      <div class="casilla"></div>
+    </template>
+  </div>
+    <script src="./js/codigo.js" type="module"></script>
+</body>
+</html>
